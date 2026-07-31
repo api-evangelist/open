@@ -1,7 +1,24 @@
 aid: open
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/open.png
 name: Open
-description: Open is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Open (Open Financial Technologies) operates at open.money as an India-based
+  fintech offering a connected digital business banking platform for SMEs and startups.
+  It pairs a business current account with invoicing, payments, automated accounting,
+  expense management and payroll, letting founders run their banking and finance operations
+  from a single dashboard. Open is a Speedinvest portfolio company. This profile was
+  added to the API Evangelist network as a portfolio lead; the company website is protected
+  by Cloudflare and no public OpenAPI could be harvested during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/open/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +26,32 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-hq: India
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Banking
+- Business Banking
+- Neobank
+- SME
+- Payments
+- Accounting
+- Payroll
+- India
+common:
+- type: DomainSecurity
+  url: security/open-domain-security.yml
+- type: Website
+  url: https://open.money/
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

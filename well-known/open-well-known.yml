@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://open.money/.well-known/*
+host: https://open.money
+note: >-
+  open.money is served behind Cloudflare and returns HTTP 403 (bot/security
+  challenge) for every /.well-known/ path probed, so no discovery document could
+  be retrieved. Absence here reflects an access block, not a confirmed 404. No
+  scoreable WellKnown/SecurityTxt pointer is wired because no document was
+  genuinely retrieved.
+documents:
+- path: /.well-known/security.txt
+  status: 403
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
